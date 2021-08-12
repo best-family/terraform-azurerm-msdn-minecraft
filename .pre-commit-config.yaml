@@ -1,0 +1,22 @@
+repos:
+- repo: git://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.50.0
+  hooks:
+    - id: terraform_fmt
+    - id: terraform_validate
+    - id: terraform_docs
+    - id: terraform_tfsec
+- repo: git://github.com/pre-commit/pre-commit-hooks
+  rev: v4.0.1
+  hooks:
+    - id: check-yaml
+      # excluded atm due to https://github.com/pre-commit/pre-commit-hooks/issues/577
+      # https://pre-commit.com/#regular-expressions
+      exclude: |
+        (?x)^(
+          templates/cloud-init/cloud-config.yaml
+        )$
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: check-case-conflict
+    - id: check-merge-conflict
