@@ -25,14 +25,23 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_linux_virtual_machine.terraform-azurerm-msdn-minecraft-jump01-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine) | resource |
-| [azurerm_monitor_diagnostic_setting.jump01-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource |
-| [azurerm_network_interface.terraform-azurerm-msdn-minecraft-jump01-nic0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) | resource |
-| [azurerm_public_ip.terraform-azurerm-msdn-minecraft-jump01-v4-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
-| [azurerm_public_ip.terraform-azurerm-msdn-minecraft-jump01-v6-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
+| [azurerm_dns_cname_record.minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/dns_cname_record) | resource |
+| [azurerm_linux_virtual_machine.terraform-azurerm-msdn-minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine) | resource |
+| [azurerm_monitor_diagnostic_setting.minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource |
+| [azurerm_network_interface.terraform-azurerm-msdn-minecraft-nic0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) | resource |
+| [azurerm_network_security_group.terraform-azurerm-msdn-minecraft-nsg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group) | resource |
+| [azurerm_network_security_rule.allow_https](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_network_security_rule.allow_icmp](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_network_security_rule.allow_ipv4_ssh](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_network_security_rule.allow_ipv4_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_network_security_rule.allow_ipv6_ssh](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_network_security_rule.allow_ipv6_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
+| [azurerm_public_ip.terraform-azurerm-msdn-minecraft-v4-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
+| [azurerm_public_ip.terraform-azurerm-msdn-minecraft-v6-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
 | [azurerm_resource_group.terraform-azurerm-msdn-minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 | [azurerm_role_assignment.minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment) | resource |
-| [azurerm_monitor_diagnostic_categories.terraform-azurerm-msdn-minecraft-jump01-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/monitor_diagnostic_categories) | data source |
+| [azurerm_subnet_network_security_group_association.terraform-azurerm-msdn-minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/subnet_network_security_group_association) | resource |
+| [azurerm_monitor_diagnostic_categories.terraform-azurerm-msdn-minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/monitor_diagnostic_categories) | data source |
 | [azurerm_role_definition.contributor](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/role_definition) | data source |
 | [azurerm_subscription.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/subscription) | data source |
 | [terraform_remote_state.msdn-networking](https://registry.terraform.io/providers/hashicorp/terraform/latest/docs/data-sources/remote_state) | data source |

@@ -25,7 +25,7 @@ provider "azurerm" {
 }
 
 // https://www.terraform.io/docs/providers/azurerm/r/resource_group.html
-// resource group for the jumphost
+// resource group for the minecraft server
 resource "azurerm_resource_group" "terraform-azurerm-msdn-minecraft" {
   location = var.LOCATION
   name     = "${var.PREFIX}-${var.ENVIRONMENT}-rg"
