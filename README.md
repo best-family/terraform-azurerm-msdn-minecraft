@@ -36,8 +36,8 @@ No modules.
 | <a name="input_CLIENT_ID"></a> [CLIENT\_ID](#input\_CLIENT\_ID) | AzureRM Client ID | `string` | n/a | yes |
 | <a name="input_CLIENT_SECRET"></a> [CLIENT\_SECRET](#input\_CLIENT\_SECRET) | AzureRM Client Secret | `string` | n/a | yes |
 | <a name="input_ENVIRONMENT"></a> [ENVIRONMENT](#input\_ENVIRONMENT) | The SDLC landscape. Used to determine if the zone data is inserted into the Dev Subscription or the Prod Subscription. (Must be "dev" or "prod".) | `string` | n/a | yes |
-| <a name="input_JUMPHOST_LINUX_HOSTNAME"></a> [JUMPHOST\_LINUX\_HOSTNAME](#input\_JUMPHOST\_LINUX\_HOSTNAME) | The hostname to assign to the OS in the Linux jumphost. | `string` | n/a | yes |
 | <a name="input_LOCATION"></a> [LOCATION](#input\_LOCATION) | The Azure location to build in. | `string` | `"australiaeast"` | no |
+| <a name="input_MINECRAFT_LINUX_HOSTNAME"></a> [MINECRAFT\_LINUX\_HOSTNAME](#input\_MINECRAFT\_LINUX\_HOSTNAME) | The hostname to assign to the OS in the Linux jumphost. | `string` | n/a | yes |
 | <a name="input_PREFIX"></a> [PREFIX](#input\_PREFIX) | The prefix to use with resource naming. | `string` | n/a | yes |
 | <a name="input_SUBSCRIPTION_ID"></a> [SUBSCRIPTION\_ID](#input\_SUBSCRIPTION\_ID) | AzureRM Subscription ID | `string` | n/a | yes |
 | <a name="input_TAGS"></a> [TAGS](#input\_TAGS) | The tags to use on all resources. | `map(string)` | <pre>{<br>  "cicdManaged": "tfc",<br>  "createdBy": "abest@diaxion.com",<br>  "environment": "dev",<br>  "terraform": "true"<br>}</pre> | no |

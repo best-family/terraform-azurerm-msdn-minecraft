@@ -44,7 +44,7 @@ variable "TAGS" {
   }
 }
 
-variable "JUMPHOST_LINUX_HOSTNAME" {
+variable "MINECRAFT_LINUX_HOSTNAME" {
   type        = string
   description = "The hostname to assign to the OS in the Linux jumphost."
 }
