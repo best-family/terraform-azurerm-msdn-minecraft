@@ -25,7 +25,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [azurerm_dns_cname_record.minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/dns_cname_record) | resource |
+| [azurerm_dns_srv_record.minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/dns_srv_record) | resource |
 | [azurerm_linux_virtual_machine.terraform-azurerm-msdn-minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/linux_virtual_machine) | resource |
 | [azurerm_monitor_diagnostic_setting.minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource |
 | [azurerm_network_interface.terraform-azurerm-msdn-minecraft-nic0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) | resource |
