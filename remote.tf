@@ -28,3 +28,17 @@ data "terraform_remote_state" "terraform-azurerm-msdn-dns" {
     hostname = "app.terraform.io"
   }
 }
+
+data "terraform_remote_state" "terraform-azurerm-msdn-storage" {
+  backend = "remote"
+
+  config = {
+
+    organization = "BestFamily"
+    workspaces = {
+      name = "terraform-azurerm-msdn-storage-${var.ENVIRONMENT}"
+    }
+
+    hostname = "app.terraform.io"
+  }
+}

@@ -46,7 +46,7 @@ variable "TAGS" {
 
 variable "MINECRAFT_LINUX_HOSTNAME" {
   type        = string
-  description = "The hostname to assign to the OS in the Linux jumphost."
+  description = "The hostname to assign to the OS in the Linux Minecraft server."
 }
 
 variable "source_address_prefixes_ipv4_allowlist" {
@@ -61,25 +61,25 @@ variable "source_address_prefixes_ipv6_allowlist" {
   default     = ["2403:5800:7800:b400::/56"]
 }
 
-variable "jumphost_admin_name" {
-  description = "The username to use on the jumphosts."
+variable "minecraft_admin_name" {
+  description = "The username to use on the Minecraft server."
   type        = string
   default     = "festivus"
 }
 
-variable "jumphost_os_disk_size" {
+variable "minecraft_os_disk_size" {
   type        = string
   description = "The size in Gb for the OS disk of the primary seed virtual machine"
   default     = "100"
 }
 
-variable "jumphost_linux_vm_size" {
-  description = "The Azure VM size to use for Linux Jumphosts."
+variable "minecraft_linux_vm_size" {
+  description = "The Azure VM size to use for Linux minecrafts."
   type        = string
   default     = "Standard_A2_v2"
 }
 
-variable "jumphost_linux_storage_image" {
+variable "minecraft_linux_storage_image" {
   type        = map(string)
   description = "A list of the data to define the os version image to build from"
 
