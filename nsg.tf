@@ -107,3 +107,36 @@ resource "azurerm_network_security_rule" "allow_ipv6_vault" {
   destination_port_range      = "8200"
   priority                    = 105
 }
+
+//25565
+# https://www.terraform.io/docs/providers/azurerm/r/network_security_rule.html
+resource "azurerm_network_security_rule" "allow_ipv4_minecraft" {
+  name                        = "${var.PREFIX}-${var.ENVIRONMENT}-ipv4-minecraft"
+  resource_group_name         = azurerm_resource_group.terraform-azurerm-msdn-minecraft.name
+  network_security_group_name = azurerm_network_security_group.terraform-azurerm-msdn-minecraft-nsg.name
+  description                 = "Allow minecraft access."
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "Tcp"
+  source_address_prefixes     = var.source_address_prefixes_ipv4_allowlist
+  destination_address_prefix  = "*"
+  source_port_range           = "*"
+  destination_port_range      = "25565"
+  priority                    = 104
+}
+
+# https://www.terraform.io/docs/providers/azurerm/r/network_security_rule.html
+resource "azurerm_network_security_rule" "allow_ipv6_minecraft" {
+  name                        = "${var.PREFIX}-${var.ENVIRONMENT}-ipv6-minecraft"
+  resource_group_name         = azurerm_resource_group.terraform-azurerm-msdn-minecraft.name
+  network_security_group_name = azurerm_network_security_group.terraform-azurerm-msdn-minecraft-nsg.name
+  description                 = "Allow minecraft access."
+  direction                   = "Inbound"
+  access                      = "Allow"
+  protocol                    = "Tcp"
+  source_address_prefixes     = var.source_address_prefixes_ipv6_allowlist
+  destination_address_prefix  = "*"
+  source_port_range           = "*"
+  destination_port_range      = "25565"
+  priority                    = 104
+}
