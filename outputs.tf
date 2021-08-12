@@ -8,6 +8,7 @@ output "minecraft-dev" {
     v4_primary_public_ip = azurerm_public_ip.terraform-azurerm-msdn-minecraft-v4-pip0.ip_address
     v6_primary_public_ip = azurerm_public_ip.terraform-azurerm-msdn-minecraft-v6-pip0.ip_address
     ssh_cli              = local.ssh-cli
+    minecraft_fqdn       = azurerm_dns_srv_record.minecraft.fqdn
   }
   depends_on = [azurerm_linux_virtual_machine.terraform-azurerm-msdn-minecraft-vm0]
 }
