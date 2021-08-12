@@ -30,14 +30,11 @@ No modules.
 | [azurerm_monitor_diagnostic_setting.minecraft-vm0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource |
 | [azurerm_network_interface.terraform-azurerm-msdn-minecraft-nic0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_interface) | resource |
 | [azurerm_network_security_group.terraform-azurerm-msdn-minecraft-nsg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_group) | resource |
-| [azurerm_network_security_rule.allow_https](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_network_security_rule.allow_icmp](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_network_security_rule.allow_ipv4_minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_network_security_rule.allow_ipv4_ssh](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
-| [azurerm_network_security_rule.allow_ipv4_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_network_security_rule.allow_ipv6_minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_network_security_rule.allow_ipv6_ssh](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
-| [azurerm_network_security_rule.allow_ipv6_vault](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/network_security_rule) | resource |
 | [azurerm_public_ip.terraform-azurerm-msdn-minecraft-v4-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
 | [azurerm_public_ip.terraform-azurerm-msdn-minecraft-v6-pip0](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/public_ip) | resource |
 | [azurerm_resource_group.terraform-azurerm-msdn-minecraft](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
