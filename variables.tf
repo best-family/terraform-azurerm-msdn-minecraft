@@ -76,7 +76,7 @@ variable "minecraft_os_disk_size" {
 variable "minecraft_linux_vm_size" {
   description = "The Azure VM size to use for Linux minecrafts."
   type        = string
-  default     = "Standard_A2_v2"
+  default     = "Standard_D2_v2"
 }
 
 variable "minecraft_linux_storage_image" {
