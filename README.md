@@ -59,7 +59,7 @@ No modules.
 | <a name="input_MINECRAFT_LINUX_HOSTNAME"></a> [MINECRAFT\_LINUX\_HOSTNAME](#input\_MINECRAFT\_LINUX\_HOSTNAME) | The hostname to assign to the OS in the Linux Minecraft server. | `string` | n/a | yes |
 | <a name="input_PREFIX"></a> [PREFIX](#input\_PREFIX) | The prefix to use with resource naming. | `string` | n/a | yes |
 | <a name="input_SUBSCRIPTION_ID"></a> [SUBSCRIPTION\_ID](#input\_SUBSCRIPTION\_ID) | AzureRM Subscription ID | `string` | n/a | yes |
-| <a name="input_TAGS"></a> [TAGS](#input\_TAGS) | The tags to use on all resources. | `map(string)` | <pre>{<br>  "cicdManaged": "tfc",<br>  "createdBy": "abest@diaxion.com",<br>  "environment": "dev",<br>  "terraform": "true"<br>}</pre> | no |
+| <a name="input_TAGS"></a> [TAGS](#input\_TAGS) | The tags to use on all resources. | `map(string)` | <pre>{<br>  "cicdManaged": "tfc",<br>  "createdBy": "andrew.best@arq.group",<br>  "environment": "dev",<br>  "terraform": "true"<br>}</pre> | no |
 | <a name="input_TENANT_ID"></a> [TENANT\_ID](#input\_TENANT\_ID) | AzureRM Tenant ID | `string` | n/a | yes |
 | <a name="input_minecraft_admin_name"></a> [minecraft\_admin\_name](#input\_minecraft\_admin\_name) | The username to use on the Minecraft server. | `string` | `"festivus"` | no |
 | <a name="input_minecraft_linux_storage_image"></a> [minecraft\_linux\_storage\_image](#input\_minecraft\_linux\_storage\_image) | A list of the data to define the os version image to build from | `map(string)` | <pre>{<br>  "offer": "0001-com-ubuntu-server-focal",<br>  "publisher": "Canonical",<br>  "sku": "20_04-lts",<br>  "version": "latest"<br>}</pre> | no |

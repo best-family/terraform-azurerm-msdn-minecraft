@@ -40,7 +40,7 @@ variable "TAGS" {
   default = { environment = "dev",
     terraform   = "true",
     cicdManaged = "tfc",
-    createdBy   = "abest@diaxion.com"
+    createdBy   = "andrew.best@arq.group"
   }
 }
 
